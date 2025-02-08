@@ -1,86 +1,21 @@
-# Nuxt + Prisma + PostgreSQL Starter
+# Coffee CRUD Application - Frontend
 
-This project is a **Nuxt 3** application with a **PostgreSQL** database managed via **Prisma ORM**. It includes a backend service for database operations and a frontend built with Nuxt.
+This is the **frontend** of the Coffee CRUD Application, developed using **Nuxt.js** with **Vue.js** and written in **TypeScript**.
 
----
+## Features
+- Display a table with all coffee entries fetched from the backend.
+- Ability to **Create**, **Read**, **Update**, and **Delete** coffee entries.
+- Fully responsive and **user-friendly interface**.
 
-## 🚀 Setup
+## Setup Instructions
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/BakrAsskali/Coffee-CRUD.git
-cd Coffee-CRUD
-```
+### Prerequisites
+- **Node.js** (v18 or later)
+- **npm** or **yarn** (for package management)
 
-### 2. Install Dependencies
-Use your preferred package manager:
-```bash
-# npm
-tnpm install
+### Installation
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-### 3. Configure Environment Variables
-Create a `.env` file inside the `backend` folder and configure your **PostgreSQL** database connection:
-```ini
-DATABASE_URL="postgresql://admin:admin@localhost:5432/coffee_db"
-```
-
----
-
-## 🏗️ Running the Project
-
-### 1. Start PostgreSQL with Docker
-Ensure **Docker** is installed, then start the database:
-```bash
-cd backend/
-docker-compose up -d
-```
-
-### 2. Migrate the Database
-Apply the Prisma schema to the PostgreSQL database:
-```bash
-npx prisma migrate dev --name init
-```
-
-### 3. Seed the Database
-Populate the database with initial data:
-```bash
-node seed.ts
-```
-
-### 4. Start the Backend Server
-Navigate to the `backend` folder and run:
-```bash
-bun run index.ts
-```
-This starts the **API server** at `http://localhost:3001`.
-
-### 5. Start the Nuxt Frontend
-Navigate to the root folder and start Nuxt:
-```bash
-npm run dev
-```
-This starts the **frontend** at `http://localhost:3000`.
-
-
-## 🛠️ Technologies Used
-- **Nuxt 3** (Vue.js framework)
-- **Prisma** (ORM for PostgreSQL)
-- **PostgreSQL** (Database)
-- **Docker** (Database containerization)
-- **Bun/npm** (Package managers)
-
----
-
-## 📄 License
-This project is licensed under the MIT License.
-
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/coffee-crud-frontend.git
+   cd coffee-crud-frontend
